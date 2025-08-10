@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Predict Productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+        <h1 class="text-xl font-bold">Employee Productivity Prediction</h1>
+        <div>
+            <a href="/" class="px-3">Home</a>
+            <a href="/predict" class="px-3">Predict</a>
+            <a href="/about" class="px-3">About</a>
+        </div>
+    </nav>
+    <div class="max-w-3xl mx-auto mt-10 bg-white p-8 rounded shadow">
+        <h1 class="text-2xl font-bold mb-6">Employee Productivity Prediction</h1>
+        <form action="/pred" method="POST" class="grid grid-cols-2 gap-4">
+
+            <input type="text" name="quarter" placeholder="Quarter" class="border p-2 rounded">
+            <input type="text" name="department" placeholder="Department" class="border p-2 rounded">
+            <input type="text" name="day" placeholder="Day" class="border p-2 rounded">
+            <input type="text" name="team" placeholder="Team" class="border p-2 rounded">
+            <input type="text" name="targeted_productivity" placeholder="Targeted Productivity"
+                class="border p-2 rounded">
+            <input type="text" name="smv" placeholder="SMV" class="border p-2 rounded">
+            <input type="text" name="over_time" placeholder="Over Time" class="border p-2 rounded">
+            <input type="text" name="incentive" placeholder="Incentive" class="border p-2 rounded">
+            <input type="text" name="idle_time" placeholder="Idle Time" class="border p-2 rounded">
+            <input type="text" name="idle_men" placeholder="Idle Men" class="border p-2 rounded">
+            <input type="text" name="no_of_style_change" placeholder="No. of Style Changes" class="border p-2 rounded">
+            <input type="text" name="no_of_workers" placeholder="No. of Workers" class="border p-2 rounded">
+            <input type="text" name="month" placeholder="Month" class="border p-2 rounded">
+
+            <div class="col-span-2">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+                    Predict
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
